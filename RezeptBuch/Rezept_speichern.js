@@ -1,12 +1,13 @@
 //Author: Jey Cee;   e-mail: jey-cee@live.com
 //
 //Script Name: Rezept Speichern
-//Version: 0.1.1 Erstellungsdatum: 13.05.2016
+//Version: 0.1.2 Erstellungsdatum: 13.05.2016
 //
 //Beschreibung: Speichert das Rezept entsprechend dem Ausgewählten Tag (Objekt: vis-switch enthält den Tag als String) im Essensplan.
 //              Dabei erhält das Rezept eine ID und es wird das Datum an dem es gespeichert wurde hinterlegt.
 //
 //Changelog: 
+//          01.11.2017 0.1.2: Manchmal wird ']' nicht entfernt, deshalb ist die JSON Datei Korrupt. Die ] wird jetzt seperat nochmal entfernt. 
 //          16.04.2017 0.1.1: Formatierung entfernt aufgrund von Problemen beim Löschen von Rezepten.
 
 var pfadRezeptBuch = '/opt/iobroker/iobroker-data/files/vis.0/main/RezeptBuch.json';    //Pfad zum RezeptBuch
@@ -93,6 +94,9 @@ function schreibeRezept(){
                 }else{
                     Daten = ', {"ID":"' + erzeugeID() + '","Name":"' + Name + '","Link":"' + Link + '","Zutaten":"' + Zutaten + '","Zubereitung":"' + Zubereitung + '","Datum":"' + Datum + '"}]}';
                 }
+                
+            Daten = Daten.replace('}],', '},');
+            
              log(fd);
              log(Tag);
              log(Daten);
