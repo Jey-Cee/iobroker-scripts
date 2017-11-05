@@ -1,0 +1,116 @@
+.vis-widget-body input[type="text"] {
+    font-size: 20px;
+   
+}
+
+/* Input */
+.auro-input {
+    position: relative;
+    padding: 0.3em;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #bababa;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e2e2e;
+    margin: 5px 5px 5px 5px;
+
+}
+
+/* The OK Button */
+.auro-btn-ok {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #0050ef;
+    border: none;
+    box-shadow: inset 0px 0px 1px #FFFFCC;
+    
+}
+
+/* Button */
+.auro-btn {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #0050ef;
+    border: none;
+    box-shadow: inset 0px 0px 1px #FFFFCC;
+    
+}
+
+  /* The Modal (background) */
+.auro-modal-own {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    left: 100px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Heating Content/Box */
+.auro-modal-heating-content {
+    background-color: #000000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px; /* Could be more or less, depending on screen size */;
+    height: 180px;
+    color: #FFFFFF;
+}
+
+
+/* Overlay  Heating */
+.auro-overlay-heating {
+    position: absolute;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    z-index: 199;
+ 
+}
+
+/* Modal Filter Content/Box */
+.auro-modal-filter-content {
+    background-color: #000000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 650px; /* Could be more or less, depending on screen size */;
+    height: 75px;
+    color: #FFFFFF;
+}
+
+/* Overlay Filter */
+.auro-overlay-filter {
+    position: absolute;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    z-index: 199;
+}
+
+/* Modal Delete Content/Box */
+.auro-modal-delete-content {
+    background-color: #000000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 250px; /* Could be more or less, depending on screen size */;
+    height: 120px;
+    color: #FFFFFF;
+}
+
+/* Overlay Delete */
+.auro-overlay-delete {
+    position: absolute;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    z-index: 199;
+}
